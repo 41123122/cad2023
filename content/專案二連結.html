@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='任務一.html'>任務一</a><ul class='dropdown'><li><a href='檔案.html'>檔案</a></li></ul><li><a href='Brython.html'>Brython</a><li class='has-children'><a href='進度.html'>進度</a><ul class='dropdown'><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W9.html'>W9</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a><li><a href='W13.html'>W13</a><li><a href='W14.html'>W14</a><li><a href='W15.html'>W15</a><li><a href='專案二連結.html'>專案二連結</a><li><a href='專案二.html'>專案二</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='任務一.html'>任務一</a><ul class='dropdown'><li><a href='檔案.html'>檔案</a></li></ul><li><a href='Brython.html'>Brython</a><li class='has-children'><a href='進度.html'>進度</a><ul class='dropdown'><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W6.html'>W6</a><li><a href='W7.html'>W7</a><li><a href='W8.html'>W8</a><li><a href='W9.html'>W9</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a><li><a href='W13.html'>W13</a><li><a href='W14.html'>W14</a><li><a href='專案二連結.html'>專案二連結</a><li><a href='W15.html'>W15</a></li>
                       </ul>
                 </nav>
               </div>
@@ -142,8 +142,38 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W15 << <a href='W15.html'>Previous</a> <a href='專案二.html'>Next</a> >> 專案二<br /><h1>專案二連結</h1>
-<br />W15 << <a href='W15.html'>Previous</a> <a href='專案二.html'>Next</a> >> 專案二</div>
+    <div id="tipue_search_content">W14 << <a href='W14.html'>Previous</a> <a href='W15.html'>Next</a> >> W15<br /><h1>專案二連結</h1>
+<p><a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/41123122_nfu_edu_tw/Eq_IrSgz3AFNk-KR5XrmAPIBeK0m-3x0UlQE3fpBSWM4Fg?e=3mgYaa">專案二零件</a></p>
+<p></p>
+<!-- add 1 to 100 開始 -->
+<script type="text/python3">
+from browser import document as doc
+import ace
+
+# 清除畫布
+def clear_bd1(ev):
+    bd = doc["brython_div1"]
+    bd.clear()
+
+# 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
+Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
+
+add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
+
+# 從 gist 取得程式碼
+add_src = open(add1to100_url).read()
+def add(ev):
+    Ace2.editor.setValue(add_src)
+    Ace2.editor.scrollToRow(0)
+    Ace2.editor.gotoLine(0)
+    Ace2.run()
+
+# id 為 "add1to100" 的按鈕點按時, 執行 add 方法
+doc["add1to100"].bind('click', add)
+</script>
+<p><!-- add 1 to 100 結束--></p>
+<!-- editor1 開始 -->
+<p><!-- 用來顯示程式碼的 editor 區域 --></p><br />W14 << <a href='W14.html'>Previous</a> <a href='W15.html'>Next</a> >> W15</div>
         
     <!-- footer -->
       <div class="container">
