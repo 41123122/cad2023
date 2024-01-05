@@ -46,114 +46,6 @@ brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
 <p>從 1 累加到 100:</p>
 <p><button id="add1to100">1 add to 100</button></p>
 <p>將 iterable 與 iterator <a href="https://home.gamer.com.tw/creationDetail.php?sn=4337438">相關說明</a>, 利用 Brython 與 Ace Editor 整理在這個頁面.</p>
-<h1>進度</h1>
-<!-- 導入 brython 程式庫 -->
-<p></p>
-<script src="/static/brython.js"></script>
-<script src="/static/brython_stdlib.js"></script>
-<!-- 啟動 Brython -->
-<h2>W4</h2>
-<p>建立考試帳號</p>
-<p>利用replit把github更新並推送更新內容</p>
-<p>選用繪圖軟體(Solidworks)</p>
-<h2>W5</h2>
-<p>學會使用CoppeliaSim</p>
-<h2>W6</h2>
-<p>進行9人分組</p>
-<p>獲取CoppepliaSim展示用IPv6位置</p>
-<h2>W7</h2>
-<script>
-window.onload=function(){
-brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
-}
-</script>
-<!-- 導入 FileSaver 與 filereader -->
-<p>學習利用localhost更新github</p>
-<p>本組開始繪製</p>
-<script src="/static/ace/FileSaver.min.js" type="text/javascript"></script>
-<script src="/static/ace/filereader.js" type="text/javascript"></script>
-<!-- 導入 ace -->
-<p><a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/41123122_nfu_edu_tw/EkwjGE3ZiAdFo8B7Zlg9HvMBC6DCh9C7OaM7cKrzCf2kgg?e=CO8MUF">組合及零件圖</a></p>
-<h2>W8</h2>
-<p>使用自架主機維護網站</p>
-<p>第一次考試</p>
-<h2>W9</h2>
-<script src="/static/ace/ace.js" type="text/javascript"></script>
-<script src="/static/ace/ext-language_tools.js" type="text/javascript"></script>
-<script src="/static/ace/mode-python3.js" type="text/javascript"></script>
-<script src="/static/ace/snippets/python.js" type="text/javascript"></script>
-<p>第二次考試</p>
-<p>填寫分數自評表</p>
-<h2>W10</h2>
-<p><span>講解wink使用方法</span></p>
-<h2>W11</h2>
-<p><span>本週停課，運動會 </span></p>
-<h2>W12</h2>
-<p><span>填位置座標</span></p>
-<p><span>並且按照位置排序出座位表</span></p>
-<h2>W13</h2>
-<p>點名</p>
-<h2>W14</h2>
-<p>完成使用acp能同時更新靜態</p>
-<p>acp錄影<iframe allowfullscreen="allowfullscreen" height="314" src='//www.youtube.com/embed/2U9Ske7Dy7M?si=jR9bM_uiLoKjpQ_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;' width="560"></iframe></p>
-<!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
-<script src="/static/Cango-24v03-min.js"></script>
-<script src="/static/gearUtils-09.js"></script>
-<script src="/static/SVGpathUtils-6v03-min.js"></script>
-<script src="/static/sylvester.js"></script>
-<script src="/static/PrairieDraw.js"></script>
-<!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src1"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱-->
-<h2>專案二連結</h2>
-<p><a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/41123122_nfu_edu_tw/Eq_IrSgz3AFNk-KR5XrmAPIBeK0m-3x0UlQE3fpBSWM4Fg?e=3mgYaa">專案二零件</a></p>
-<p></p>
-<!-- add 1 to 100 開始 -->
-<script type="text/python3">
-from browser import document as doc
-import ace
-
-# 清除畫布
-def clear_bd1(ev):
-    bd = doc["brython_div1"]
-    bd.clear()
-
-# 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
-Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
-
-add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
-
-# 從 gist 取得程式碼
-add_src = open(add1to100_url).read()
-def add(ev):
-    Ace2.editor.setValue(add_src)
-    Ace2.editor.scrollToRow(0)
-    Ace2.editor.gotoLine(0)
-    Ace2.run()
-
-# id 為 "add1to100" 的按鈕點按時, 執行 add 方法
-doc["add1to100"].bind('click', add)
-</script>
-<p><!-- add 1 to 100 結束--></p>
-<!-- editor1 開始 -->
-<p><!-- 用來顯示程式碼的 editor 區域 --></p>
-<h2>W15</h2>
-<p><a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/41123122_nfu_edu_tw/EjIBdum57TNKt1uUyBbjckcBcBvpTdPB3Y7mMnxSua10UA?e=3cbnfH">零件圖</a></p>
-<p></p><h2>W16</h2>
-<p>課程總結</p>
-<p><span>A: 是否按照進度明確標示倉儲的改版歷程</span></p>
-<p><span>B: 是否根據<span> </span><span>IPv4 與 IPv6</span><span> </span>網路環境設定進行作法討論</span></p>
-<p><span>C: 是否就<span><span> </span>Replit、s.cycu.org 與 localhost</span><span> </span>情境下對個人與分組倉儲進行設定操作</span></p>
-<p><span>D: 是否就所分配的<span> </span><span>CAD 套件</span>從安裝設定到繪圖提供內容參考</span></p>
-<p><span>E: 是否使用所分配的 CAD 套件完成<span>專案一零組件繪圖</span>, 並提供零組件下載</span></p>
-<p><span>F: 是否將自行繪製的專案一零組件<span>轉入 CoppeliaSim</span></span></p>
-<p><span>G: 是否利用<span> </span><span>ZMQ Remote API Python</span><span> </span>對專案一轉入的零組件設定感測器, 並進行<span>鋼球永動模擬</span></span></p>
-<p><span>H: 是否實際操作<span> </span><span>Triangle 軌道系統</span>的鋼球永動模擬</span></p>
-<p><span>I: 是否完成 W15 的平面雙 U 迴路上的<span>鋼球永動系統繪圖、轉檔與系統模擬</span></span></p>
-<p><span>J: 是否使用所分配的 CAD 套件完成<span>專案二 1D 平台零組件繪圖</span>, 並提供零組件下載</span></p>
-<p><span>K: 是否利用<span> </span><span>ZMQ Remote API Python</span><span> </span>對專案二轉入的零組件設定感測器, 並進行鋼球永動模擬</span></p>
-<p><span>L: 是否針對專案二的 1D 平台鋼球平衡系統所需的<span> </span><span>PID 控制理論</span>進行資料收集與 ChatGPT 對答</span></p>
-<p><span>已完成</span></p>
-<p><span>A,B,C(原本是用replit，換成使用s.cycu.org),D(選用solidworks),E,F,G(可以模擬，也有加感測器，但無法永動),I,J,K(可以模擬，無法永動)</span></p>
-<p></p>
 <p></p>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
 <p><!-- 存擋表單開始 --></p>
@@ -286,7 +178,65 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <p><!-- 程式執行 ouput 區 --></p>
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
-<div id="brython_div2"></div>
+<div id="brython_div2">
+<h1>進度</h1>
+<p></p>
+<h2>W4</h2>
+<p>建立考試帳號</p>
+<p>利用replit把github更新並推送更新內容</p>
+<p>選用繪圖軟體(Solidworks)</p>
+<h2>W5</h2>
+<p>學會使用CoppeliaSim</p>
+<h2>W6</h2>
+<p>進行9人分組</p>
+<p>獲取CoppepliaSim展示用IPv6位置</p>
+<h2>W7</h2>
+<p>學習利用localhost更新github</p>
+<p>本組開始繪製</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/41123122_nfu_edu_tw/EkwjGE3ZiAdFo8B7Zlg9HvMBC6DCh9C7OaM7cKrzCf2kgg?e=CO8MUF">組合及零件圖</a></p>
+<h2>W8</h2>
+<p>使用自架主機維護網站</p>
+<p>第一次考試</p>
+<h2>W9</h2>
+<p>第二次考試</p>
+<p>填寫分數自評表</p>
+<h2>W10</h2>
+<p><span>講解wink使用方法</span></p>
+<h2>W11</h2>
+<p><span>本週停課，運動會 </span></p>
+<h2>W12</h2>
+<p><span>填位置座標</span></p>
+<p><span>並且按照位置排序出座位表</span></p>
+<h2>W13</h2>
+<p>點名</p>
+<h2>W14</h2>
+<p>完成使用acp能同時更新靜態</p>
+<p>acp錄影<iframe allowfullscreen="allowfullscreen" height="314" src='//www.youtube.com/embed/2U9Ske7Dy7M?si=jR9bM_uiLoKjpQ_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;' style="display: inline-block; position: relative; margin: 0px 2px; line-height: 0; border: 1px solid gray; cursor: default;" width="560"></iframe></p>
+<h2>專案二連結</h2>
+<p><a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/41123122_nfu_edu_tw/Eq_IrSgz3AFNk-KR5XrmAPIBeK0m-3x0UlQE3fpBSWM4Fg?e=3mgYaa">專案二零件</a></p>
+<p></p>
+<p></p>
+<p></p>
+<h2>W15</h2>
+<p><a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/41123122_nfu_edu_tw/EjIBdum57TNKt1uUyBbjckcBcBvpTdPB3Y7mMnxSua10UA?e=3cbnfH">零件圖</a></p>
+<p></p>
+<h2>W16</h2>
+<p>課程總結</p>
+<p><span>A: 是否按照進度明確標示倉儲的改版歷程</span></p>
+<p><span>B: 是否根據<span> </span><span>IPv4 與 IPv6</span><span> </span>網路環境設定進行作法討論</span></p>
+<p><span>C: 是否就<span><span> </span>Replit、s.cycu.org 與 localhost</span><span> </span>情境下對個人與分組倉儲進行設定操作</span></p>
+<p><span>D: 是否就所分配的<span> </span><span>CAD 套件</span>從安裝設定到繪圖提供內容參考</span></p>
+<p><span>E: 是否使用所分配的 CAD 套件完成<span>專案一零組件繪圖</span>, 並提供零組件下載</span></p>
+<p><span>F: 是否將自行繪製的專案一零組件<span>轉入 CoppeliaSim</span></span></p>
+<p><span>G: 是否利用<span> </span><span>ZMQ Remote API Python</span><span> </span>對專案一轉入的零組件設定感測器, 並進行<span>鋼球永動模擬</span></span></p>
+<p><span>H: 是否實際操作<span> </span><span>Triangle 軌道系統</span>的鋼球永動模擬</span></p>
+<p><span>I: 是否完成 W15 的平面雙 U 迴路上的<span>鋼球永動系統繪圖、轉檔與系統模擬</span></span></p>
+<p><span>J: 是否使用所分配的 CAD 套件完成<span>專案二 1D 平台零組件繪圖</span>, 並提供零組件下載</span></p>
+<p><span>K: 是否利用<span> </span><span>ZMQ Remote API Python</span><span> </span>對專案二轉入的零組件設定感測器, 並進行鋼球永動模擬</span></p>
+<p><span>L: 是否針對專案二的 1D 平台鋼球平衡系統所需的<span> </span><span>PID 控制理論</span>進行資料收集與 ChatGPT 對答</span></p>
+<p><span>已完成</span></p>
+<p><span>A,B,C(原本是用replit，換成使用s.cycu.org),D(選用solidworks),E,F,G(可以模擬，也有加感測器，但無法永動),I,J,K(可以模擬，無法永動)</span></p>
+</div>
 <!-- editor2 結束 --><hr/>
 <p>
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
